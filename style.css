@@ -134,3 +134,20 @@ nav a:hover{
 }
 
 /*Bloque 7 - Imagenes en un cuadrado*/
+.matriz_imagenes{
+    align-items: center;
+    background-color:gold;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+/*Cuando tengamos las imagenes hay que ver cuanto tienen que tener de margenes etc*/
+.fila{
+    display: flex;
+    justify-content: space-around;
+}
+.columna img{ /*para las imagenes*/
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
