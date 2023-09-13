@@ -4,12 +4,17 @@
     padding: 0px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 10px;
 }
+
 /*Poner los diferentes tipos de pantalla que podemos tener*/
+
 body{
     background-color: rgb(255, 247, 236);
 }
+
 /*Todo lo que es el tema de la barra de navegacion*/
+
 nav{
     background-color: rgb(255, 248, 106); /*Fondo de la barra*/
     justify-content: space-between;
@@ -29,13 +34,17 @@ nav a{ /*Solo modifica los que estan dentro del nav*/
 nav a:hover{
     color: rgb(243, 0, 0); /*animacion cuando pasas con el mouse*/
 }
+
 /*Bloque 1*/
+
 #bloque_1{ /*primer bloque del index*/
     margin-top: 20px;
     background-color: rgb(181, 255, 244);
     border-radius: 5px;
 }
+
 /*Bloque 2 - 3 cartas*/
+
 #bloque_2{ /*segundo bloque del index*/
     display: flex;
     padding: 10px;
@@ -43,7 +52,9 @@ nav a:hover{
     background-color: chartreuse;
     border-radius: 5px;
 }
+
 /*TODO EL ESTILO QUE TIENEN LAS CARTAS*/
+
 .carta{
     background-color: blueviolet; /*fondo de la carta*/
     padding: 10px;
@@ -68,7 +79,9 @@ nav a:hover{
 .carta a:hover{
     background-color: chocolate; /*para que tenga una animacion cuando lo vas a tocar*/
 }
+
 /*Bloque 3 - */
+
 .bloque_3{
     margin-top: 25px;
     display: flex;
@@ -82,4 +95,40 @@ nav a:hover{
 }
 .bloque_3 .carta{
     background-color: coral; /*Para cambiar el color*/
+}
+
+/*Bloque 4*/
+#bloque_4{ 
+    margin-top: 20px;
+    background-color: rgb(142, 50, 129);
+    border-radius: 5px;
+}
+
+/*Bloque 5*/
+
+#bloque_5{
+    margin-top: 20px;
+    background-color: rgb(214, 161, 46);
+    border-radius: 5px;
+}
+
+/*Bloque 6*/
+
+.bloque_6{
+    margin-top: 20px;
+    background-color: rgb(187, 21, 179);
+    border-radius: 5px;
+}
+.bloque_6 a{ /*copio lo de las cartas asi se ve como un boton*/
+    display: inline-block;
+    text-decoration: none; /*le saco el link visual*/
+    color: white;
+    background-color: #b120c2; /*lo hago tipo boton*/
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px; /*para que se parezca a un boton*/
+    margin-bottom: 10px;
+}
+.bloque_6 a:hover{
+    background-color: chocolate; /*para que tenga una animacion cuando lo vas a tocar*/
 }
