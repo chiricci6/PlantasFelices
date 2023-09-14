@@ -151,3 +151,27 @@ nav a:hover{
     max-width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 768px){
+    body {
+        font-size: 8px;
+    }
+    #bloque_2 .carta {
+        width: 45%; /* Ancho de cada carta */
+        margin: 10px; /* Espacio entre las cartas */
+    }
+    .bloque_3 .carta {
+        width: 45%;
+        margin: 10px;
+    }
+    .carta {
+        width: 90%;
+        margin: 10px 0; /* Espacio vertical entre las cartas */
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 1025px){
+
+}
