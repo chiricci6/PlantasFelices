@@ -73,10 +73,22 @@ nav a:hover{
     border-radius: 5px;
     margin-top: 10px;
     padding: 10px 20px; /*para que se parezca a un boton*/
+    transition: transform 0.3s ease; 
 }
 .carta a:hover{
     background-color: black; /*para que tenga una animacion cuando lo vas a tocar*/
+    transform: rotate(15deg);
 }
+
+/*Animacion de imagenes*/
+
+.movimiento_imagen_x{ /*Se traslada en x*/
+    transition: transform 0.3s ease;
+}
+.movimiento_imagen_x:hover{
+    transform: translateX(20px);
+}
+
 
 
 /*Bloque 1*/
@@ -85,7 +97,7 @@ nav a:hover{
     margin-top: 20px;
     background-color: #E3A587;
     border-radius: 5px;
-    padding: 25px;
+    padding: 50px;
 }
 
 /*Bloque 2*/
@@ -94,7 +106,7 @@ nav a:hover{
     margin-top: 20px;
     background-color: #FFD275;
     border-radius: 5px;
-    padding: 25px;
+    padding: 50px;
 }
 
 /*Bloque 7 - Imagenes en un cuadrado*/
@@ -127,12 +139,6 @@ nav a:hover{
     width: 450px;
     height: 350px;
 }
-.movimiento_imagen{
-    transition: transform 0.3s ease;
-}
-.movimiento_imagen:hover{
-    transform: translateX(20px);
-}
 
 
 /*Bloque 3 - Cuidados*/
@@ -149,6 +155,7 @@ nav a:hover{
 }
 .bloque_3 a{
     background-color: #7261A3;
+    
 }
 
 /*Bloque 4 - Plagas*/
@@ -191,7 +198,7 @@ nav a:hover{
     margin-top: 20px;
     background-color: #CB769E;
     border-radius: 5px;
-    padding: 25px;
+    padding: 50px;
 }
 
 /*Bloque 7*/
@@ -200,29 +207,6 @@ nav a:hover{
     margin-top: 20px;
     background-color: #8CAE68;
     border-radius: 5px;
-    padding: 25px;
+    padding: 50px;
 }
 
-@media screen and (max-width: 768px){
-    body {
-        font-size: 8px;
-    }
-    #bloque_2 .carta {
-        width: 45%; /* Ancho de cada carta */
-        margin: 10px; /* Espacio entre las cartas */
-    }
-    .bloque_3 .carta {
-        width: 45%;
-        margin: 10px;
-    }
-    .carta {
-        width: 90%;
-        margin: 10px 0; /* Espacio vertical entre las cartas */
-    }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px){
-
-}
-@media screen and (min-width: 1025px){
-
-}
