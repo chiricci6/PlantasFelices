@@ -127,6 +127,13 @@ nav a:hover{
     width: 450px;
     height: 350px;
 }
+.movimiento_imagen{
+    transition: transform 0.3s ease;
+}
+.movimiento_imagen:hover{
+    transform: translateX(20px);
+}
+
 
 /*Bloque 3 - Cuidados*/
 .bloque_3 .carta{
