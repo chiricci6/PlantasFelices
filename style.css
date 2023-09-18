@@ -16,10 +16,26 @@ body{
 /*Todo lo que es el tema de la barra de navegacion*/
 
 nav{
-    background-color: rgb(255, 248, 106); /*Fondo de la barra*/
+    background-color: #fff; /*Fondo de la barra*/
     justify-content: space-between;
     display: flex;
+    align-items: flex-end;
+}
+.logo{
+    display: contents;
+}
+#logo{
+    width: 13%;
+    height: 13%;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul{ /*Solo modifica los que estan dentro del nav*/
+    list-style-type: none;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 nav ul{ /*Solo modifica los que estan dentro del nav*/
     list-style-type: none;
@@ -34,6 +50,7 @@ nav a{ /*Solo modifica los que estan dentro del nav*/
 nav a:hover{
     color: rgb(243, 0, 0); /*animacion cuando pasas con el mouse*/
 }
+
 
 /*Bloque 1*/
 
