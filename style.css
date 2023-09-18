@@ -58,6 +58,9 @@ nav a:hover{
     padding: 10px;
     border-radius: 5px; /*para que tenga un borde como una carta*/
     border: 1px solid black;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
 }
 .carta h2{
     margin-top: 5px; /*para que no se pegue a la imagen*/
