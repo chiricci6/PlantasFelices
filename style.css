@@ -10,7 +10,7 @@
 /*Poner los diferentes tipos de pantalla que podemos tener*/
 
 body{
-    background-color: rgb(255, 247, 236);
+    background-color: #E2E8C0;
 }
 
 /*Todo lo que es el tema de la barra de navegacion*/
@@ -51,24 +51,14 @@ nav a:hover{
     color: rgb(243, 0, 0); /*animacion cuando pasas con el mouse*/
 }
 
+
 /*Bloque 1*/
 
 #bloque_1{ /*primer bloque del index*/
     margin-top: 20px;
-    background-color: rgb(181, 255, 244);
+    background-color: #FDECEF;
     border-radius: 5px;
 }
-
-/*Bloque 2 - 3 cartas*/
-
-#bloque_2{ /*segundo bloque del index*/
-    display: flex;
-    padding: 10px;
-    justify-content: space-around; /*para que quede bien*/
-    background-color: chartreuse;
-    border-radius: 5px;
-}
-
 /*TODO EL ESTILO QUE TIENEN LAS CARTAS*/
 
 .carta{
@@ -97,15 +87,6 @@ nav a:hover{
 }
 
 /*Bloque 3 - */
-
-.bloque_3{
-    margin-top: 25px;
-    display: flex;
-    padding: 10px;
-    justify-content: space-around; /*para que quede bien*/
-    background-color: rgb(171, 20, 151);
-    border-radius: 5px;
-}
 .bloque_3 a{
     background-color: #42bbbf; /*Para cambiar los colores de los botones*/
 }
