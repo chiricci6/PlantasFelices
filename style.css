@@ -10,13 +10,13 @@
 /*Poner los diferentes tipos de pantalla que podemos tener*/
 
 body{
-    background-color: #EFECCA;
+    background-color: #B8E6B8;
 }
 
 /*Todo lo que es el tema de la barra de navegacion*/
 
 nav{
-    background-color: #C5E6A6; /*Fondo de la barra*/
+    background-color: #A2D9A2; /*Fondo de la barra*/
     justify-content: space-between;
     display: flex;
     align-items: flex-end;
@@ -48,7 +48,7 @@ nav a{ /*Solo modifica los que estan dentro del nav*/
     color: black;
 }
 nav a:hover{
-    color: rgb(243, 0, 0); /*animacion cuando pasas con el mouse*/
+    color: #60992D; /*animacion cuando pasas con el mouse*/
 }
 
 /*TODO EL ESTILO QUE TIENEN LAS CARTAS*/
@@ -94,20 +94,20 @@ nav a:hover{
 
 
 
-/*Bloque 1*/
+/*Bloque 1 - Seccion 1*/
 
 #bloque_1{ 
     margin-top: 20px;
-    background-color: #E3A587;
+    background-color: #C2A87F;
     border-radius: 5px;
     padding: 50px;
 }
 
-/*Bloque 2*/
+/*Bloque 2 - Seccion 2*/
 
 #bloque_2{
     margin-top: 20px;
-    background-color: #FFD275;
+    background-color: #F2E7B1;
     border-radius: 5px;
     padding: 50px;
 }
@@ -117,8 +117,8 @@ nav a:hover{
 .matriz_imagenes{
     margin-top: 20px;
     align-items: center;
-    background-color:#C5E6A6;
-    border: 1px solid #C5E6A6;
+    background-color:#FDFDFD;
+    border: 1px solid #FDFDFD;
     border-radius: 10px;
     flex-wrap: wrap;
     padding: 25px;
@@ -146,8 +146,8 @@ nav a:hover{
 
 /*Bloque 3 - Cuidados*/
 .bloque_3 .carta{
-    background-color: #9297C4;
-    border-color: #9297C4;
+    background-color: #C9E890;
+    border-color: #C9E890;
 }
 .bloque_3 img{
     border-radius: 10px;
@@ -157,15 +157,15 @@ nav a:hover{
     height: 350px;
 }
 .bloque_3 a{
-    background-color: #7261A3;
+    background-color: #76a918;
     
 }
 
 /*Bloque 4 - Plagas*/
 
 .bloque_4 .carta{
-    background-color: #FFAFF0;
-    border-color: #FFAFF0;
+    background-color: #FFF0A5;
+    border-color: #FFF0A5;
 }
 .bloque_4 img{
     border-radius: 10px;
@@ -175,14 +175,14 @@ nav a:hover{
     height: 350px;
 }
 .bloque_4 a{
-    background-color: #F092DD;
+    background-color: #f6d845;
 }
 
 /*Bloque 5 - PF*/
 
 .bloque_5 .carta{
-    background-color: #8AFFC1;
-    border-color: #8AFFC1;
+    background-color: #D6BBA6;
+    border-color: #D6BBA6;
 }
 .bloque_5 img{
     border-radius: 10px;
@@ -192,24 +192,27 @@ nav a:hover{
     height: 350px;
 }
 .bloque_5 a{
-    background-color: #8FDC97;
+    background-color: #b1815d;
 }
 
-/*Bloque 6*/
+/*Bloque 6 - Seccion 3*/
 
 #bloque_6{
     margin-top: 20px;
-    background-color: #CB769E;
+    background-color: #B0D4A5;
     border-radius: 5px;
     padding: 50px;
 }
 
-/*Bloque 7*/
+/*Bloque 7 - Seccion 4*/
 
 #bloque_7{
     margin-top: 20px;
-    background-color: #8CAE68;
+    background-color: #F6DDA5;
     border-radius: 5px;
     padding: 50px;
 }
 
+footer{
+    background-color: #7DAB7D;
+}
