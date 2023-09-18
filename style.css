@@ -10,13 +10,13 @@
 /*Poner los diferentes tipos de pantalla que podemos tener*/
 
 body{
-    background-color: #E2E8C0;
+    background-color: #EFECCA;
 }
 
 /*Todo lo que es el tema de la barra de navegacion*/
 
 nav{
-    background-color: #fff; /*Fondo de la barra*/
+    background-color: #C5E6A6; /*Fondo de la barra*/
     justify-content: space-between;
     display: flex;
     align-items: flex-end;
@@ -51,21 +51,13 @@ nav a:hover{
     color: rgb(243, 0, 0); /*animacion cuando pasas con el mouse*/
 }
 
-
-/*Bloque 1*/
-
-#bloque_1{ /*primer bloque del index*/
-    margin-top: 20px;
-    background-color: #FDECEF;
-    border-radius: 5px;
-}
 /*TODO EL ESTILO QUE TIENEN LAS CARTAS*/
 
 .carta{
-    background-color: blueviolet; /*fondo de la carta*/
+    background-color: black; /*fondo de la carta*/
     padding: 10px;
     border-radius: 5px; /*para que tenga un borde como una carta*/
-    border: 1px solid #9f1ac3;
+    border: 1px solid black;
 }
 .carta h2{
     margin-top: 5px; /*para que no se pegue a la imagen*/
@@ -77,76 +69,131 @@ nav a:hover{
     display: inline-block;
     text-decoration: none; /*le saco el link visual*/
     color: white;
-    background-color: #b120c2; /*lo hago tipo boton*/
+    background-color: black; /*lo hago tipo boton*/
     border-radius: 5px;
     margin-top: 10px;
     padding: 10px 20px; /*para que se parezca a un boton*/
 }
 .carta a:hover{
-    background-color: chocolate; /*para que tenga una animacion cuando lo vas a tocar*/
+    background-color: black; /*para que tenga una animacion cuando lo vas a tocar*/
 }
 
-/*Bloque 3 - */
-.bloque_3 a{
-    background-color: #42bbbf; /*Para cambiar los colores de los botones*/
-}
-.bloque_3 .carta{
-    background-color: coral; /*Para cambiar el color*/
-}
 
-/*Bloque 4*/
-#bloque_4{ 
+/*Bloque 1*/
+
+#bloque_1{ 
     margin-top: 20px;
-    background-color: rgb(142, 50, 129);
+    background-color: #E3A587;
     border-radius: 5px;
+    padding: 25px;
 }
 
-/*Bloque 5*/
+/*Bloque 2*/
 
-#bloque_5{
+#bloque_2{
     margin-top: 20px;
-    background-color: rgb(214, 161, 46);
+    background-color: #FFD275;
     border-radius: 5px;
-}
-
-/*Bloque 6*/
-
-.bloque_6{
-    margin-top: 20px;
-    background-color: rgb(187, 21, 179);
-    border-radius: 5px;
-}
-.bloque_6 a{ /*copio lo de las cartas asi se ve como un boton*/
-    display: inline-block;
-    text-decoration: none; /*le saco el link visual*/
-    color: white;
-    background-color: #b120c2; /*lo hago tipo boton*/
-    border-radius: 5px;
-    margin-top: 10px;
-    padding: 10px 20px; /*para que se parezca a un boton*/
-    margin-bottom: 10px;
-}
-.bloque_6 a:hover{
-    background-color: chocolate; /*para que tenga una animacion cuando lo vas a tocar*/
+    padding: 25px;
 }
 
 /*Bloque 7 - Imagenes en un cuadrado*/
+
 .matriz_imagenes{
+    margin-top: 20px;
     align-items: center;
-    background-color:gold;
-    border: 1px solid #ccc;
+    background-color:#C5E6A6;
+    border: 1px solid #C5E6A6;
     border-radius: 10px;
     flex-wrap: wrap;
+    padding: 25px;
 }
 /*Cuando tengamos las imagenes hay que ver cuanto tienen que tener de margenes etc*/
 .fila{
     display: flex;
     justify-content: space-around;
 }
+.fila img{ /*para las imagenes*/
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    height: 350px;
+}
 .columna img{ /*para las imagenes*/
     border-radius: 10px;
     max-width: 100%;
     height: auto;
+    width: 450px;
+    height: 350px;
+}
+
+/*Bloque 3 - Cuidados*/
+.bloque_3 .carta{
+    background-color: #9297C4;
+    border-color: #9297C4;
+}
+.bloque_3 img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    height: 350px;
+}
+.bloque_3 a{
+    background-color: #7261A3;
+}
+
+/*Bloque 4 - Plagas*/
+
+.bloque_4 .carta{
+    background-color: #FFAFF0;
+    border-color: #FFAFF0;
+}
+.bloque_4 img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    height: 350px;
+}
+.bloque_4 a{
+    background-color: #F092DD;
+}
+
+/*Bloque 5 - PF*/
+
+.bloque_5 .carta{
+    background-color: #8AFFC1;
+    border-color: #8AFFC1;
+}
+.bloque_5 img{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 450px;
+    height: 350px;
+}
+.bloque_5 a{
+    background-color: #8FDC97;
+}
+
+/*Bloque 6*/
+
+#bloque_6{
+    margin-top: 20px;
+    background-color: #CB769E;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+/*Bloque 7*/
+
+#bloque_7{
+    margin-top: 20px;
+    background-color: #8CAE68;
+    border-radius: 5px;
+    padding: 25px;
 }
 
 @media screen and (max-width: 768px){
