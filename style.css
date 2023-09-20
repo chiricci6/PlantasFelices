@@ -51,6 +51,27 @@ nav a:hover{
     color: #60992D; /*animacion cuando pasas con el mouse*/
 }
 
+/*GALERIA DE IMAGENES*/
+.conteiner-galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 225px;
+}
+
+.imagen-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-galeria:nth-child(2){
+    grid-column-start: span 2;
+}
+
+.item-galeria:nth-child(1){
+    grid-row-start: span 2;
+}
+
 /*TODO EL ESTILO QUE TIENEN LAS CARTAS*/
 
 .carta{
