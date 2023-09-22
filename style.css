@@ -58,6 +58,9 @@ nav a:hover{
     grid-auto-rows: 225px;
 }
 
+.item-galeria{
+    margin: 0px;
+
 .imagen-galeria{
     width: 100%;
     height: 100%;
