@@ -270,11 +270,22 @@ footer{
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
     background: #A2D9A2;
     cursor: pointer;
     margin-bottom: 2px;
     transition: all 300ms ease;
 }
+
+.titulo-acordeon::after{
+    content: "+";
+    padding-right: 1rem;
+}
+
+.btn-acordeon:checked ~ .titulo-acordeon::after{
+    content: "-";
+}
+
 .acordeon label:hover{
     background: #7DAB7D;
 }
@@ -288,7 +299,7 @@ footer{
 }
 
 .btn-acordeon:checked ~ .contenido-acordeon{
-    max-height: 600px;
+    max-height: 800px;
     padding: 15px 0px;
 }
 
