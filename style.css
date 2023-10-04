@@ -367,3 +367,57 @@ nav a:hover{
 .btn-acordeon{
     display: none;
 }
+
+/*Seccion preguntas*/
+.contenedor .preguntas{
+    width: 100%;
+    max-width: 800px;
+    margin:auto;
+    margin-top: 80px;
+}
+
+.preguntas{
+    background: white;
+}
+
+.preguntas label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align:left;
+    background: #D6BBA6;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+
+.titulo-preguntas::after{
+    content: "+";
+    padding-right: 1rem;
+}
+
+.btn-preguntas:checked ~ .titulo-preguntas::after{
+    content: "-";
+}
+
+.preguntas label:hover{
+    background: #b1815d;
+}
+
+.preguntas .contenido-preguntas{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+
+.btn-preguntas:checked ~ .contenido-preguntas{
+    max-height: 800px;
+    padding: 15px 0px;
+}
+
+.btn-preguntas{
+    display: none;
+}
