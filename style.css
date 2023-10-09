@@ -343,7 +343,7 @@ nav a:hover{
 #bloque_6{
     margin-bottom: 30px;
     margin-top: 30px;
-    background-color: #b0d4a5be;
+    background-color: #b9e3ac7a;
     border-radius: 5px;
     padding: 50px;
 }
@@ -359,7 +359,7 @@ nav a:hover{
 }
 
 .preguntas{
-    background: #d6bba6be;
+    background: #d6bba69d;
 }
 
 .preguntas label{
@@ -368,7 +368,7 @@ nav a:hover{
     font-size: 20px;
     font-weight: bold;
     text-align:left;
-    background: #d6bba6be;
+    background: #d6bba69d;
     cursor: pointer;
     margin-bottom: 2px;
     transition: all 300ms ease;
@@ -384,7 +384,7 @@ nav a:hover{
 }
 
 .preguntas label:hover{
-    background: #d6bba6be;
+    background: #d6bba69d;
 }
 
 .preguntas .contenido-preguntas{
