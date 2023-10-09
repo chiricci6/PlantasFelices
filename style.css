@@ -140,10 +140,11 @@ nav a:hover{
 
 /*Bloque 1 - Bienvenido a plantas felices*/
 .bloque_1{ 
-    margin-top: 20px;
     background-color: #c2a87fd0;
     border-radius: 5px;
     padding: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 /*.oculto {
     opacity: 0;
@@ -156,11 +157,11 @@ nav a:hover{
 
 /*Bloque 2 - Que hacemos y nuestro objetivo*/
 #bloque_2{
-    margin-top: 20px;
     background-color: #f2e7b1b9;
     border-radius: 5px;
     padding: 50px;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /*Carta 1 - Cuidados*/
@@ -214,7 +215,8 @@ nav a:hover{
 
 /*Bloque 3 - Porque elegirnos*/
 #bloque_3{
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     background-color: #b0d4a5e5;
     border-radius: 5px;
     padding: 50px;
@@ -222,8 +224,9 @@ nav a:hover{
 
 /*Bloque 4 - Unete a nuestra mision*/
 #bloque_4{
-    margin-top: 20px;
-    background-color: #f6dca5c1;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #f6dca5a0;
     border-radius: 5px;
     padding: 50px;
 }

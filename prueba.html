@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efecto de Texto Escribiéndose</title>
+  <style>
+    .seccion {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .texto-oculto {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .mostrar-texto .texto-oculto {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="seccion" onmouseover="mostrarTexto(this)">
+    <h2>Título de la Sección</h2>
+    <div class="texto-oculto">
+      <p>Texto que se mostrará al pasar el mouse.</p>
+    </div>
+  </div>
+
+  <script>
+    function mostrarTexto(elemento) {
+      elemento.classList.add('mostrar-texto');
+    }
+  </script>
+</body>
+</html>
