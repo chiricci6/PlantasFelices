@@ -279,60 +279,35 @@ nav a:hover{
     color:#f6d845
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
-
 /* Seccion de cuidados*/
 
+/*bloque 5 - Todo para el cuidado de tus plantas*/
+#bloque_5{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #d7ffa9a0;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+/*Acordeones*/
 .contenedor .acordeon{
     width: 100%;
     max-width: 800px;
     margin:auto;
     margin-top: 80px;
+    padding: 20px;
 }
-
 .acordeon{
-    background: white;
-}
-
+    background: #f2e7b1e4;
+}   
 .acordeon label{
     display: block;
     padding: 20px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background: #A2D9A2;
+    background: #f2e7b1b9;
     cursor: pointer;
     margin-bottom: 2px;
     transition: all 300ms ease;
@@ -348,7 +323,7 @@ nav a:hover{
 }
 
 .acordeon label:hover{
-    background: #7DAB7D;
+    background: #f2e7b1b9;
 }
 
 .acordeon .contenido-acordeon{
@@ -360,13 +335,24 @@ nav a:hover{
 }
 
 .btn-acordeon:checked ~ .contenido-acordeon{
-    max-height: 800px;
+    max-height: 12000px;
     padding: 15px 0px;
 }
 
 .btn-acordeon{
     display: none;
 }
+
+/*Bloque 6 - Prreguntas frecuentes acerca del ducadi de plantas*/
+#bloque_6{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background-color: #b0d4a5e5;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+
 
 /*Seccion preguntas*/
 .contenedor .preguntas{
@@ -377,7 +363,7 @@ nav a:hover{
 }
 
 .preguntas{
-    background: white;
+    background: #d6bba6e3;
 }
 
 .preguntas label{
@@ -386,7 +372,7 @@ nav a:hover{
     font-size: 20px;
     font-weight: bold;
     text-align:left;
-    background: #D6BBA6;
+    background: #d6bba6e3;
     cursor: pointer;
     margin-bottom: 2px;
     transition: all 300ms ease;
@@ -402,7 +388,7 @@ nav a:hover{
 }
 
 .preguntas label:hover{
-    background: #b1815d;
+    background: #d6bba6e3;
 }
 
 .preguntas .contenido-preguntas{
