@@ -29,19 +29,21 @@
     <main>
 
         <!--Introduccion-->
-        <div id="bloque_1">
+        <div class="bloque_1" onmouseover="mostrarTexto(this)">
             <h1>Bienvenido a Plantas Felices</h1>
-            <h4>Descubre el arte de cuidar y proteger tus plantas
+            <div class="oculto">
+                <h4>Descubre el arte de cuidar y proteger tus plantas
 
-                ¿Tienes un amor profundo por las plantas? ¿Buscas la clave para mantenerlas radiantes y libres de plagas? ¡Estás en el lugar adecuado!
-                
-                En <i>Plantas Felices</i>, desentrañamos los secretos del cuidado de las plantas y te enseñamos cómo protegerlas de las plagas de manera sencilla y efectiva. Aquí, la naturaleza cobra vida, y tú eres el jardinero maestro.
-                
-                Dentro de nuestras páginas, encontrarás consejos prácticos, soluciones probadas y la comunidad de amantes de las plantas más apasionada. ¿Estás listo para embarcarte en una aventura verde? ¡Vamos a empezar!
-            </h4>
+                    ¿Tienes un amor profundo por las plantas? ¿Buscas la clave para mantenerlas radiantes y libres de plagas? ¡Estás en el lugar adecuado!
+                    
+                    En<i>Plantas Felices</i>, desentrañamos los secretos del<u>cuidado de las plantas y te enseñamos cómo protegerlas de las plagas</u>de manera sencilla y efectiva. Aquí, la naturaleza cobra vida, y tú eres el jardinero maestro.
+                    
+                    Dentro de nuestras páginas, encontrarás consejos prácticos, soluciones probadas y la comunidad de amantes de las plantas más apasionada. ¿Estás listo para embarcarte en una aventura verde? ¡Vamos a empezar!
+                </h4>
+            </div>
         </div>
 
-        <!--Galeria de imagenes-->
+        <!--Galeria de imagenes con efecto de zoom al pasar el mouse-->
         <div class="container-galeria">
             <div class="item-galeria">
                 <img src="imagenes/imagen1.jpg" alt="" class="imagen-galeria">
@@ -96,9 +98,9 @@
         </section> -->
 
         <!--Cuidados-->
-        <section class="bloque_3">
+        <section class="carta_1">
             <div class="carta">
-                <img src="imagenes/Ejemplo_1.jpg" alt="Imagen_1">
+                <img src="imagenes/Ejemplo_1.jpg" alt="Imagen_1" class="movimiento_imagen_x">
                 <div>
                     <h2>Cuidados</h2>
                     <p>Todo lo que debes saber para que tus plantas estén sanas, hermosas y crezcan fuertes. Acá encontrarás recomendaciones sobre el sustrato apropiado, el riego, la luz y la temperatura. Además, también tenemos información sobre fertilizantes y la importancia de la poda.</p>
@@ -108,9 +110,9 @@
         </section>
 
         <!--Plagas-->
-        <section class="bloque_4">
+        <section class="carta_2">
             <div class="carta">
-                <img src="imagenes/Ejemplo_2.jpg" alt="Imagen_2">
+                <img src="imagenes/Ejemplo_2.jpg" alt="Imagen_2" class="movimiento_imagen_x">
                 <div>
                     <h2>Plagas</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consectetur sit neque ullam exercitationem beatae, molestiae enim sunt quasi id sapiente labore, et cum nihil, quas nostrum perferendis debitis! Doloremque.</p>
@@ -120,9 +122,9 @@
         </section>
 
         <!--Preguntas Frecuentes-->
-        <section class="bloque_5">
+        <section class="carta_3">
             <div class="carta">
-                <img src="imagenes/Ejemplo_3.jpg" alt="Imagen_3">
+                <img src="imagenes/Ejemplo_3.jpg" alt="Imagen_3" class="movimiento_imagen_x">
                 <div>
                     <h2>Preguntas Frecuentes</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque consectetur sit neque ullam exercitationem beatae, molestiae enim sunt quasi id sapiente labore, et cum nihil, quas nostrum perferendis debitis! Doloremque.</p>
@@ -132,7 +134,7 @@
         </section>
 
         <!--Porque elegirnos-->
-        <section id="bloque_6">
+        <section id="bloque_3">
             <h2>Por qué elegirnos</h2>
             <h4>
                 En <i>Plantas Felices</i>, nos apasiona el mundo de las plantas y queremos compartir esa pasión contigo. Nuestra dedicación al cuidado de las plantas y el control de plagas es lo que nos impulsa a ofrecer la mejor información y recursos disponibles en línea.
@@ -140,7 +142,7 @@
         </section>
 
         <!--Mision-->
-        <section id="bloque_7">
+        <section id="bloque_4">
             <h2>Únete a nuestra misión</h2>
             <h4>
                 Únete a nosotros en nuestra misión de hacer que el mundo esté lleno de plantas felices. Juntos, podemos crear entornos más verdes y saludables. ¡Explorá nuestro sitio y comienza tu viaje hacia un jardín próspero y una vida con plantas más feliz!
@@ -180,5 +182,6 @@
         </div>
         
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
