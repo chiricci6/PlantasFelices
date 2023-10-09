@@ -27,6 +27,13 @@ body{
     background-color: #B8E6B8;
 }
 
+/*lo que va a seguir al mouse*/
+#imagenSeguidora {
+    position: absolute;
+    pointer-events: none; /* Permite que el mouse interactúe con los elementos debajo de la imagen */
+    transition: all 0.2s ease;
+  }
+
 /*Todo lo que es el tema de la barra de navegacion*/
 nav{
     background-color: #A2D9A2; /*Fondo de la barra*/
@@ -107,6 +114,7 @@ nav a:hover{
 }
 .carta p{
     margin-top: 5px; /*para que no se pegue al titulo*/
+    text-align: center;
 }
 .carta a{
     display: inline-block;
@@ -133,36 +141,31 @@ nav a:hover{
 /*Bloque 1 - Bienvenido a plantas felices*/
 .bloque_1{ 
     margin-top: 20px;
-    background-color: #C2A87F;
+    background-color: #c2a87fd0;
     border-radius: 5px;
     padding: 50px;
-    /*la animacion que va con js*/
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
 }
-.oculto {
+/*.oculto {
     opacity: 0;
     transition: opacity 0.5s ease;
     white-space: normal;
 }
 .mostrar-texto .oculto {
     opacity: 1;
-}
-
-
+}*/
 
 /*Bloque 2 - Que hacemos y nuestro objetivo*/
 #bloque_2{
     margin-top: 20px;
-    background-color: #F2E7B1;
+    background-color: #f2e7b1b9;
     border-radius: 5px;
     padding: 50px;
+    margin-bottom: 30px;
 }
 
 /*Carta 1 - Cuidados*/
 .carta_1 .carta{
-    background-color: #C9E890;
+    background-color: #c9e890da;
     border-color: #C9E890;
 }
 .carta_1 img{
@@ -179,7 +182,7 @@ nav a:hover{
 
 /*Carta 2 - Plagas*/
 .carta_2 .carta{
-    background-color: #FFF0A5;
+    background-color: #fff0a5c7;
     border-color: #FFF0A5;
 }
 .carta_2 img{
@@ -190,7 +193,7 @@ nav a:hover{
     height: 350px;
 }
 .carta_2 a{
-    background-color: #f6d845;
+    background-color: #eace42;
 }
 
 /*Carta 3 - PF*/
@@ -212,7 +215,7 @@ nav a:hover{
 /*Bloque 3 - Porque elegirnos*/
 #bloque_3{
     margin-top: 20px;
-    background-color: #B0D4A5;
+    background-color: #b0d4a5e5;
     border-radius: 5px;
     padding: 50px;
 }
@@ -220,7 +223,7 @@ nav a:hover{
 /*Bloque 4 - Unete a nuestra mision*/
 #bloque_4{
     margin-top: 20px;
-    background-color: #F6DDA5;
+    background-color: #f6dca5c1;
     border-radius: 5px;
     padding: 50px;
 }
@@ -252,7 +255,7 @@ nav a:hover{
 .pie-pagina .grupo-1 .box h2{
     margin-bottom: 25px;
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .pie-pagina .grupo-1 .box li{
     list-style: none;
