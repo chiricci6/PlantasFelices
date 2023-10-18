@@ -22,7 +22,9 @@ li{
     padding: 0;
 }
 
-
+body{
+    background-color: beige;
+}
 /*lo que va a seguir al mouse*/
 #imagenSeguidora {
     position: absolute;
@@ -143,6 +145,9 @@ nav a:hover{
     margin-bottom: 30px;
     margin-top: 30px;
 }
+.bloque_1 p{
+    text-align: center;
+}
 /*.oculto {
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -153,14 +158,16 @@ nav a:hover{
 }*/
 
 /*Bloque 2 - Que hacemos y nuestro objetivo*/
-#bloque_2{
+.bloque_2{
     background-color: #f2e7b18a;
     border-radius: 5px;
     padding: 50px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
-
+.bloque_2 p{
+    text-align: center;
+}
 /*Carta 1 - Cuidados*/
 .carta_1 .carta{
     background-color: #c9e890b3;
@@ -211,21 +218,46 @@ nav a:hover{
 }
 
 /*Bloque 3 - Porque elegirnos*/
-#bloque_3{
+.bloque_3{
     margin-bottom: 30px;
     margin-top: 30px;
     background-color: #b0d4a590;
     border-radius: 5px;
     padding: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.bloque_3 p{
+    text-align: center;
 }
 
 /*Bloque 4 - Unete a nuestra mision*/
-#bloque_4{
+.bloque_4{
     margin-bottom: 30px;
     margin-top: 30px;
     background-color: #f6dca57f;
     border-radius: 5px;
     padding: 50px;
+    
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.bloque_4 p{
+    text-align: center;
+}
+.bloque_4 a{
+    display: inline-block;
+    text-decoration: none; /*le saco el link visual*/
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 192, 223); /*lo hago tipo boton*/
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 20px; /*para que se parezca a un boton*/
+    transition: transform 0.3s ease; 
+}
+.bloque_4 a:hover{
+    background-color: black; /*para que tenga una animacion cuando lo vas a tocar*/
+    transform: rotate(15deg);
 }
 
 /* Seccion footer*/
@@ -282,7 +314,7 @@ nav a:hover{
 #bloque_5{
     margin-bottom: 30px;
     margin-top: 30px;
-    background-color: #d7ffa975;
+    background-color: #cafb91ab;
     border-radius: 5px;
     padding: 50px;
 }
