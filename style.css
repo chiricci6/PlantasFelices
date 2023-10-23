@@ -435,7 +435,23 @@ nav a:hover{
 .btn-preguntas{
     display: none;
 }
-
+/*Contacto*/
+.formulario{
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+.formulario th, .formulario td{
+    padding: 15px; 
+}
+#bloque_7{
+    background-color: #a5d27ac7;
+    border-radius: 5px;
+}
+.forms input[type="submit"]{
+    padding: 10px 20px;
+    font-size: 16px;
+}
 /*Para q se adapte a cualquier pantalla*/
 /*NO PUDE ADAPTAR LA BARRA DE NEVAGACION, EL RESTO SI Y YA REVISE TODO! FALTA LA NAV*/
 

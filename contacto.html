@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <title>Contacto</title>
-   <!--Poner logo-->
-</head>
-<body> 
+    <script src="https://kit.fontawesome.com/d86e8b9712.js" crossorigin="anonymous"></script>
+    <title>Plantas felices</title>
 
+    <!--Poner logo-->
+</head>
+<body>
     <nav> <!--Barra de navegacion-->
         <a href="index.html">
             <div class="logo">
@@ -26,5 +27,66 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <div id="imagenSeguidora"><img src="hoja.png" width="25px" height="25px" alt="Imagen Seguidora"></div>
+    <section id="bloque_7">
+        <table class="formulario">
+            <tr>
+                <th>Contacto</th>
+                <th>Formulario</th>
+            </tr>
+            <tr>
+                <td>
+                    <p>Mail <a href="mailto:plantasfelices7@gmail.com">plantasfelices7@gmail.com</a></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18048.126471711108!2d-58.37916996395325!3d-34.60475396952901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352943f3226d%3A0xdf53d1e7b723133c!2sPuente%20de%20la%20Mujer!5e0!3m2!1ses-419!2sar!4v1698070094087!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </td>
+                <td class="forms"> <!--formulario-->
+                    <form action="https://formspree.io/f/moqoreon" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required><br>
+    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+    
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+    
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="imagenes/Logo.png" alt="logo de la página" id="logo">
+                    </a>
+                </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestros servicios</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Seguinos</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+        
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
