@@ -262,6 +262,7 @@ nav a:hover{
 .pie-pagina{
     background-color: #7dab7d98;
     width: 100%;
+    border-radius: 5px;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -326,7 +327,7 @@ nav a:hover{
     padding: 20px;
 }
 .acordeon{
-    background: #f2e7b1ca;
+    background: #ffe176c4;
 }   
 .acordeon label{
     display: block;
@@ -334,7 +335,7 @@ nav a:hover{
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    background: f2e7b1ca;
+    background: #cdb34cca;
     cursor: pointer;
     margin-bottom: 2px;
     transition: all 300ms ease;
