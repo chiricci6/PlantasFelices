@@ -625,4 +625,56 @@ nav a:hover{
     }
 }
 
+/* NAV */
+@media screen and (max-width: 920px) {
+    nav li {
+        margin: 0 15px; /* Ajusta el espacio entre elementos de la lista */
+    }
+}
 
+@media screen and (max-width: 880px) {
+    nav li {
+        margin: 0 10px; /* Ajusta el espacio entre elementos de la lista */
+    }
+}
+
+@media screen and (max-width: 770px) {
+    nav ul {
+        justify-content: space-between; /* Espacio uniforme entre elementos */
+    }
+    
+    nav li {
+        margin: 0 15px; /* Ajusta el espacio entre elementos de la lista */
+    }
+}
+
+@media screen and (max-width: 620px) {
+    nav ul {
+        flex-direction: column; /* Apila los elementos en la lista */
+    }
+    
+    nav li {
+        margin: 5px 0; /* Espacio entre elementos de la lista */
+    }
+}
+
+@media screen and (max-width: 530px) {
+    nav li {
+        margin: 0 10px; /* Ajusta el espacio entre elementos de la lista */
+    }
+}
+
+@media screen and (max-width: 490px) {
+    nav {
+        flex-direction: column; /* Apila los elementos en la barra de navegación */
+    }
+    
+    nav ul {
+        flex-direction: column; /* Apila los elementos en la lista */
+        margin-top: 10px; /* Espacio entre la lista y el logo */
+    }
+    
+    nav li {
+        margin: 5px 0; /* Espacio entre elementos de la lista */
+    }
+}
