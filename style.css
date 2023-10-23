@@ -451,6 +451,12 @@ nav a:hover{
     p{
         font-size:medium;
     }
+    li{
+        font-size:medium;
+    }
+    ul{
+        font-size:medium;
+    }
 }
 @media screen and (max-width: 880px){
     h1{
@@ -463,6 +469,12 @@ nav a:hover{
         font-size: medium;
     }
     p{
+        font-size: small;
+    }
+    ul{
+        font-size: small; 
+    }
+    li{
         font-size: small;
     }
     /*La galeria de 4 imagenes*/
