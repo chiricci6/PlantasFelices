@@ -452,6 +452,20 @@ nav a:hover{
     padding: 10px 20px;
     font-size: 16px;
 }
+#enconstruccion{
+    background-color: beige;
+    border-radius: 15px;
+}
+
+#enconstruccion img{
+    margin-top: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 524px;
+    height: 350px;
+    
+}
 /*Para q se adapte a cualquier pantalla*/
 /*NO PUDE ADAPTAR LA BARRA DE NEVAGACION, EL RESTO SI Y YA REVISE TODO! FALTA LA NAV*/
 
@@ -532,6 +546,11 @@ nav a:hover{
         padding: 5px;
         margin-left: 120px;
         margin-right: 120px;
+    }
+    #enconstruccion img{
+        padding: 5px;
+        width: 350px;
+        height: 250px;
     }
 }
 @media screen and (max-width: 770px){
@@ -677,6 +696,10 @@ nav a:hover{
     .acordeon{
         padding: 5px;
     }   
+    #enconstruccion img{
+        width: 250px;
+        height: 170px;
+    }
 }
 
 /* NAV */
