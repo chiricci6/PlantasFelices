@@ -705,19 +705,16 @@ nav a:hover{
 @media screen and (max-width: 620px) {
     nav ul {
         flex-direction: column;
-        text-align: center;
     }
     
     nav li {
         margin: 5px 0;
-        text-align: center;
     }
 }
 
 @media screen and (max-width: 530px) {
     nav li {
         margin: 0 10px;
-        text-align: center;
     }
 }
 
@@ -729,11 +726,9 @@ nav a:hover{
     nav ul {
         flex-direction: column;
         margin-top: 10px;
-        text-align: center;
     }
     
     nav li {
         margin: 5px 0;
-        text-align: center;
     }
 }
