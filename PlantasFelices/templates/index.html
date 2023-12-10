@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Aca se conecta con el css-->
+    <!--Para conectar con GoogleFonts-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d86e8b9712.js" crossorigin="anonymous"></script>
+    <title>Plantas felices</title>
+    <!--Poner logo-->
+</head>
+<body>
+    <nav> <!--Barra de navegacion-->
+        <a href="{{ url_for('index') }}">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo">
+            </div>
+        </a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('cuidados') }}">Cuidados</a></li>
+            <li><a href="{{ url_for('preguntas') }}">Preguntas frecuentes</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="imagenSeguidora"><img src="{{ url_for('static', filename='imagenes/hoja.png') }}" width="25px" height="25px" alt="Imagen Seguidora"></div>
+    <main>
+
+        <!--Introduccion-->
+        <div class="bloque_1">
+            <h1>Bienvenido a Plantas Felices</h1>
+            <div class="oculto">
+                <p>Descubre el arte de cuidar y proteger tus plantas
+
+                    ¿Tienes un amor profundo por las plantas? ¿Buscas la clave para mantenerlas radiantes y libres de plagas? ¡Estás en el lugar adecuado!
+                    
+                    En<i>Plantas Felices</i>, desentrañamos los secretos del<u>cuidado de las plantas y te enseñamos cómo protegerlas de las plagas</u>de manera sencilla y efectiva. Aquí, la naturaleza cobra vida, y tú eres el jardinero maestro.
+                    
+                    Dentro de nuestras páginas, encontrarás consejos prácticos, soluciones probadas y la comunidad de amantes de las plantas más apasionada. ¿Estás listo para embarcarte en una aventura verde? ¡Vamos a empezar!
+                </p>
+            </div>
+        </div>
+
+        <!--Galeria de imagenes con efecto de zoom al pasar el mouse-->
+        <div class="container-galeria">
+            <div class="item-galeria">
+                <img src="{{ url_for('static', filename='imagenes/Imagen1.jpg') }}" alt="" class="imagen-galeria">
+            </div>
+            <div class="item-galeria">
+                <img src="{{ url_for('static', filename='imagenes/Imagen2.jpg') }}" alt="" class="imagen-galeria">
+            </div>
+            <div class="item-galeria">
+                <img src="{{ url_for('static', filename='imagenes/Imagen3.jpg') }}" alt="" class="imagen-galeria">
+            </div>
+            <div class="item-galeria">
+                <img src="{{ url_for('static', filename='imagenes/Imagen4.jpg') }}" alt="" class="imagen-galeria">
+            </div>
+        </div>
+
+        <!--Que hacemos y nuestro objetivo-->
+        <section class="bloque_2">
+            <h2>Qué hacemos y nuestro objetivo</h2>
+            <p>
+                En<i>Plantas Felices</i>, nos dedicamos a brindarte información valiosa y práctica sobre el cuidado de plantas y la gestión de plagas. Nuestro equipo de expertos apasionados por la jardinería se esfuerza por compartir conocimientos que te ayudarán a mantener tus plantas saludables y hermosas. <br>
+                Nuestro objetivo principal es<u>empoderarte con las herramientas y el conocimiento necesario para que cada planta sea una planta feliz</u>. Creemos que todas las plantas merecen crecer en un ambiente saludable y próspero, y estamos comprometidos a ayudarte a lograrlo.
+            </p>
+            <h2>Lo que ofrecemos</h2>
+            <p>
+                <ul>
+                    <li><u>Consejos y guías expertas</u>: Proporcionamos consejos prácticos respaldados por la experiencia de nuestros expertos en jardinería.</li>
+                    <li><u>Información actualizada</u>: Mantenemos nuestros contenidos actualizados para que siempre tengas acceso a la información más reciente.</li>
+                    <li><u>Control de plagas efectivo</u>: Te enseñamos cómo identificar, prevenir y controlar las plagas de manera efectiva y respetuosa con el medio ambiente.</li>
+                    <li><u>Comunidad de amantes de las plantas</u>: Únete a nuestra comunidad en línea, comparte tus éxitos y desafíos, y aprende de otros entusiastas de las plantas.</li>
+                </ul>
+            </p>
+        </section>
+
+        <!--Cuidados-->
+        <section class="carta_1">
+            <div class="carta">
+                <img src="{{ url_for('static', filename='imagenes/Ejemplo_11.jpg') }}" alt="Imagen_1" class="movimiento_imagen_x">
+                <div>
+                    
+                    <p>Todo lo que debes saber para que tus plantas estén sanas, hermosas y crezcan fuertes. Acá encontrarás recomendaciones sobre el sustrato apropiado, el riego, la luz y la temperatura. Además, también tenemos información sobre fertilizantes y la importancia de la poda.</p>
+                    <a href="{{ url_for('cuidados') }}">Cuidados</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Plagas-->
+        <section class="carta_2">
+            <div class="carta">
+                <img src="{{ url_for('static', filename='imagenes/Ejemplo_22.jpg') }}" alt="Imagen_2" class="movimiento_imagen_x">
+                <div>
+                    
+                    <p>Todo lo que necesitas saber sobre las plagas mas comunes de las plantas</p>
+                    <a href="{{ url_for('cuidados') }}">Plagas</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Preguntas Frecuentes-->
+        <section class="carta_3">
+            <div class="carta">
+                <img src="{{ url_for('static', filename='imagenes/Ejemplo_2.jpg') }}" alt="Imagen_3" class="movimiento_imagen_x">
+                <div>
+                    <p>Todas las preguntas frecuentes en un solo lugar!</p>
+                    <a href="{{ url_for('preguntas') }}">Preguntas Frecuentes</a>
+                </div>
+            </div>
+        </section>
+
+        <!--Porque elegirnos-->
+        <section class="bloque_3">
+            <h2>Por qué elegirnos</h2>
+            <p>
+                En <i>Plantas Felices</i>, nos apasiona el mundo de las plantas y queremos compartir esa pasión contigo. Nuestra dedicación al cuidado de las plantas y el control de plagas es lo que nos impulsa a ofrecer la mejor información y recursos disponibles en línea.
+            </p>
+        </section>
+
+        <!--Mision-->
+        <section class="bloque_4">
+            <h2>Únete a nuestra misión</h2>
+            <p>
+                Únete a nosotros en nuestra misión de hacer que el mundo esté lleno de plantas felices. Juntos, podemos crear entornos más verdes y saludables. ¡Explorá nuestro sitio y comienza tu viaje hacia un jardín próspero y una vida con plantas más feliz!
+            </p>
+            <a href="{{ url_for('contacto') }}">Unite!</a>
+        </section>
+
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo">
+                    </a>
+                </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <ul>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nosotros</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nuestros servicios</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Seguinos</h2>
+                    <div class="red-social">
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-facebook"></a>
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+        </div>
+        <section class="carta_1">
+            <div class="carta">
+                <div>
+                    <a href="{{ url_for('newsletter') }}">Newsletter</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

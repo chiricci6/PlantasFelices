@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Aca se conecta con el css-->
+    <!--Para conectar con GoogleFonts-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d86e8b9712.js" crossorigin="anonymous"></script>
+    <title>Preguntas frecuentes</title>
+   <!--Poner logo-->
+</head>
+<body> 
+
+    <nav> <!--Barra de navegacion-->
+        <a href="{{ url_for('index') }}">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo">
+            </div>
+        </a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('cuidados') }}">Cuidados</a></li>
+            <li><a href="{{ url_for('preguntas') }}">Preguntas frecuentes</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="imagenSeguidora"><img src="{{ url_for('static', filename='imagenes/hoja.png') }}" width="25px" height="25px" alt="Imagen Seguidora"></div>
+     <main>
+        <div id="bloque_6">
+            <h1>Preguntas frecuentes acerca de el cuidado de plantas</h1>
+                <p>Bienvenido a nuestra sección de preguntas frecuentes sobre el cuidado de las plantas. El mundo de la jardinería y el cuidado de las plantas es fascinante y gratificante, pero también puede plantear muchas preguntas. En esta sección, hemos recopilado una serie de preguntas frecuentes junto con respuestas detalladas para ayudarte a mantener tus plantas saludables y felices. <br><br>            Aquí encontrarás información valiosa sobre cómo cuidar tus plantas, identificar problemas comunes y fomentar un crecimiento exuberante. Nuestra misión es proporcionarte la orientación y el conocimiento que necesitas para convertirte en un experto en el cuidado de las plantas. ¡Explora nuestras preguntas frecuentes y descubre los secretos para tener un jardín vibrante y lleno de vida! Si no encuentras la respuesta que buscas, no dudes en ponerte en contacto con nuestro equipo de expertos, quienes estarán encantados de ayudarte. <br><br>
+                    ¡Adelante, profundicemos juntos en el emocionante mundo de la jardinería! <br><br> <b>Hacé click sobre la pregunta que te interesa y listo.</b></p>  
+        </div>
+     </main>
+
+     <!--Preguntas-->
+     <section>
+        <div class="contenedor-preguntas">
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas1" class="btn-preguntas">
+                <label for="btn-preguntas1"class="titulo-preguntas">
+                    ¿Por qué las hojas de mi planta se están volviendo amarillas?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Las hojas amarillas pueden deberse a diversas razones, como falta de agua, exceso de riego, deficiencias de nutrientes (como hierro), o problemas de luz. Identificar la causa específica es importante para corregir el problema.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas2" class="btn-preguntas">
+                <label for="btn-preguntas2"class="titulo-preguntas">
+                    ¿Qué debo hacer si las hojas de mi planta están marchitas?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Las hojas marchitas pueden ser el resultado de falta de agua o exposición a temperaturas extremas. Riega adecuadamente y asegúrate de que la planta esté en un ambiente adecuado.</p>
+                </div>
+            </div>   
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas3" class="btn-preguntas">
+                <label for="btn-preguntas3"class="titulo-preguntas">
+                    ¿Cómo puedo limpiar las hojas de mis plantas de manera efectiva?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Puedes limpiar las hojas de las plantas con un paño húmedo o una esponja suave para eliminar el polvo. Evita usar productos químicos o limpiadores que puedan dañar las hojas.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas4" class="btn-preguntas">
+                <label for="btn-preguntas4"class="titulo-preguntas">
+                    ¿Por qué las hojas de mi planta tienen manchas marrones o amarillas?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Las manchas en las hojas pueden ser causadas por hongos, bacterias, quemaduras solares o incluso salpicaduras de agua en las hojas. Trata el problema específico según la causa.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas5" class="btn-preguntas">
+                <label for="btn-preguntas5"class="titulo-preguntas">
+                    ¿Qué significan las hojas que caen de mi planta?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>La caída de hojas puede deberse a factores como el envejecimiento natural de la planta, cambios estacionales o problemas de salud. Es normal que algunas hojas mueran, pero si es excesivo, puede indicar un problema subyacente.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas6" class="btn-preguntas">
+                <label for="btn-preguntas6"class="titulo-preguntas">
+                    ¿Cómo puedo identificar si mi planta está sufriendo por falta de agua o exceso de agua?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>La falta de agua se manifiesta con hojas marchitas y secas, mientras que el exceso de agua causa hojas amarillentas y pudrición de raíces. Observa la humedad del sustrato y las señales visuales de la planta.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas7" class="btn-preguntas">
+                <label for="btn-preguntas7"class="titulo-preguntas">
+                    ¿Cuándo debo trasplantar mi planta?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Trasplanta cuando la planta esté demasiado grande para su maceta actual o cuando las raíces llenen la maceta y ya no haya espacio. Esto suele hacerse cada 1-2 años.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas8" class="btn-preguntas">
+                <label for="btn-preguntas8"class="titulo-preguntas">
+                    ¿Cuánta agua necesita mi planta y con qué frecuencia debo regarla?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>La cantidad de agua que necesita una planta depende de su tipo y tamaño. En general, es mejor permitir que la capa superior del sustrato se seque antes de volver a regar. La frecuencia varía según la temporada y las condiciones ambientales.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas9" class="btn-preguntas">
+                <label for="btn-preguntas9"class="titulo-preguntas">
+                    ¿Por qué las hojas de mi planta se retuercen y se caen?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Que las hojas se retuercen y se caigan son señal de falta de calor, exceso de riego o corrientes de aire frío.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas10" class="btn-preguntas">
+                <label for="btn-preguntas10"class="titulo-preguntas">
+                    ¿A qué se debe que las hojas de mi planta se caigan repentinamente?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>La caída repentina de hojas sin un período de marchitamiento previo o sin haber perdido el color puede deberse a una conmoción de la planta: un cambio brusco de temperatura o una corriente fría de aire. Esto también se puede deber a falta de agua.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas11" class="btn-preguntas">
+                <label for="btn-preguntas11"class="titulo-preguntas">
+                    ¿A qué se debe que las puntas y/o los bordes de las hojas se pongan marrones?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Si solo las puntas son marrones pero los bordes se mantienen verdes, la causa puede ser el aire muy seco. <br> Otra posible razón es el roce, tenemos que fijarnos si hay una circulación de gente, animales o si la hoja está contra una pared o ventana. <br>Si los bordes son marrones o amarillos las causas pueden ser muy variadas, por lo que tendremos que buscar más síntomas. Pero pueden deberse a: Exceso o falta de riego, muy poca luz o mucho sol, poco o demasiado calor, aire seco o corrientes de aire. </p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas12" class="btn-preguntas">
+                <label for="btn-preguntas12"class="titulo-preguntas">
+                    ¿Por qué las hojas de mi planta están pálidas?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Probablemente la culpa sea de un exceso de luz. También puede deberse a la araña roja o que las hojas tienen exceso de polvo y suciedad, en el ultimo caso se procede a limpiar las hojas.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas13" class="btn-preguntas">
+                <label for="btn-preguntas13"class="titulo-preguntas">
+                    ¿Por qué mi planta no crece?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>En invierno es normal que las plantas detengan su crecimiento. En verano la causa puede ser falta de abono, exceso de agua o que les falte luz. Si ninguno de estos factores es el culpable y la temperatura está la recomendada, posiblemente sea causa de una maceta muy pequeña. Llegó la hora de transplantar. </p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas14" class="btn-preguntas">
+                <label for="btn-preguntas14"class="titulo-preguntas">
+                    ¿Por qué mi planta no da flores?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Si está en edad y época de florecer las razones pueden ser falta de luz, exceso de abono o estar expuesta a aire muy seco.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas15" class="btn-preguntas">
+                <label for="btn-preguntas15"class="titulo-preguntas">
+                    ¿A qué se debe que las hojas superiores de mi planta estén firmes pero amarillas?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Esto se debe generalmente al uso de cal en algunos sustratos o al uso de agua dura para el riego. Se recomienda para esto el uso de agua filtrada o de agua de lluvia para regar.</p>
+                </div>
+            </div>
+            <div class="preguntas">
+                <input type="checkbox" name="preguntas" id="btn-preguntas16" class="btn-preguntas">
+                <label for="btn-preguntas16"class="titulo-preguntas">
+                    ¿A qué se debe que las hojas de mi planta de pongan amarillas y se caigan?
+                </label>
+                <div class="contenido-preguntas">
+                    <p>Es totalmente normal que alguna hoja, más que nada las inferiores, se pongan amarillas y caigan. Cuando muchas hojas se ponen amarillas al mismo tiempo puede ser señal de exceso de riego o corrientes de aire. </p>
+                </div>
+            </div>
+     </section>
+     <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo" style="height: 100px;width: 130px;">
+                    </a>
+                </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <ul>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nosotros</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nuestros servicios</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Seguinos</h2>
+                    <div class="red-social">
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-facebook"></a>
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+
+            
+            </div>
+        
+        </div>
+        <section class="carta_1">
+            <div class="carta">
+                <div>
+                    <a href="{{ url_for('newsletter') }}">Newsletter</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

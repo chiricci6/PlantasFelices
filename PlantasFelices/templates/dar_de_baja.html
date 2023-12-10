@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Aca se conecta con el css-->
+    <!--Para conectar con GoogleFonts-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d86e8b9712.js" crossorigin="anonymous"></script>
+    <title>Plantas felices</title>
+
+    <!--Poner logo-->
+</head>
+<body>
+    <nav> <!--Barra de navegacion-->
+        <a href="{{ url_for('index') }}">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo">
+            </div>
+        </a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('cuidados') }}">Cuidados</a></li>
+            <li><a href="{{ url_for('preguntas') }}">Preguntas frecuentes</a></li>
+            <li><a href="{{ url_for('contacto') }}">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="imagenSeguidora"><img src="{{ url_for('static', filename='imagenes/hoja.png') }}" width="25px" height="25px" alt="Imagen Seguidora"></div>
+    <section id="bloque_7">
+        <h2>Confirmar Dar de Baja</h2>
+    <p>¿Estás seguro de que deseas dar de baja al usuario {{ usuario[1] }}?</p>
+
+    <form action="{{ url_for('dar_de_baja', id=usuario[0]) }}" method="post">
+        <button type="submit">Sí, Dar de Baja</button>
+    </form>
+
+    <p><a href="{{ url_for('index') }}">Cancelar</a></p>
+    </section>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="{{ url_for('static', filename='imagenes/Logo.png') }}" alt="logo de la página" id="logo">
+                    </a>
+                </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <ul>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nosotros</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Nuestros servicios</a></li>
+                        <li><a href="{{ url_for('enconstruccion') }}">Política de privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h2>Seguinos</h2>
+                    <div class="red-social">
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-facebook"></a>
+                        <a href="{{ url_for('enconstruccion') }}" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+    
+                
+            </div>
+            
+        </div>
+        <section class="carta_1">
+            <div class="carta">
+                <div>
+                    <a href="{{ url_for('index') }}">Inicio</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
